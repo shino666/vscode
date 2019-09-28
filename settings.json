@@ -1,0 +1,28 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderWhitespace": "boundary",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "editor.minimap.enabled": false,
+    "files.autoGuessEncoding": true,
+    "vim.hlsearch": false,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+    "vim.useSystemClipboard":true,
+    "vim.handleKeys": {
+        "<C-a>": false,  // 全選択
+        "<C-b>": false,  // サイドバーの表示切替
+        "<C-c>": false,  // コピー
+        "<C-f>": false,  // 検索
+        "<C-j>": false,  // 下部パネルの表示切替
+        "<C-k>": false,  // 第一ショートカットキー
+        "<C-n>": false,  // 新規ファイル作成
+        "<C-q>": false,  // ウインドウ切り替え
+        "<C-x>": false,  // カット
+    },
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.rendererType": "dom"
+}

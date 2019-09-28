@@ -1,0 +1,57 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    // ターミナル上ではクイックオープンを表示しない
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen",
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    // パネルのトグルはctrl+@で実施するのでオフ
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    // ノーマルモード時のみ置換
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    // 矩形ヴィジュアルモードを使用するための設定
+    {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    // コマンドパレット内のvim風移動
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // サジェスト内でのvim風移動
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+]
